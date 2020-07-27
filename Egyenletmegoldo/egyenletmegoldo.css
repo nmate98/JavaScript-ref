@@ -1,0 +1,14 @@
+input{
+    width: 50px;
+}
+.matrixInput{
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+div{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+    <link href = "calculator.css", rel = "stylesheet", type = "text/css">
+    <link href = "../base.css", rel = "stylesheet", type = "text/css">
+</head>
+<style>
+    textarea{
+        resize: none;
+        text-align: justify;
+    }
+</style>
+<body>
+    <ul class = "navbar">
+        <li class = "navbar-element"><a href = "../Index/index.html">Kezdőlap</a></li>
+        <li class = "navbar-element"><a href = "../Egyenletmegoldo/egyenletmegoldo.html">Egyenletmegoldó</a></li>
+    </ul>
+    <h1 id = "cim"> Számológép</h1>
+    <div><input  type = "text" id = "input" minlength = 1 maxlength= 100></div>
+    <button id = "megoldButton">Megold</button>
+    <dl id = "megoldas"></dl>
+
+</body>
+<script src="calculator.js"></script>
+</html>
