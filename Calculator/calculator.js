@@ -179,6 +179,11 @@ function megold(feladat) {
                 let eredmeny = elsoTag / masodikTag;
                 eredmeny = feladat.substring(0, poz - vissza + 1) + eredmeny + feladat.substring(poz + elore);
                 if (eredmeny.includes('+') || eredmeny.includes('*') || eredmeny.includes('/')) {
+                    var lista = document.getElementById('megoldas');
+                    var ujElem = document.createElement('dt');
+                    var ujElemTxt = document.createTextNode(feladat + " = " + eredmeny);
+                    ujElem.appendChild(ujElemTxt);
+                    lista.append(ujElem);
                     return megold(eredmeny);
                 }
                 else {
@@ -220,6 +225,11 @@ function megold(feladat) {
                 let eredmeny = elsoTag * masodikTag;
                 eredmeny = feladat.substring(0, poz - vissza + 1) + eredmeny + feladat.substring(poz + elore);
                 if (eredmeny.includes('+') || eredmeny.includes('*') || eredmeny.includes('/')) {
+                    var lista = document.getElementById('megoldas');
+                    var ujElem = document.createElement('dt');
+                    var ujElemTxt = document.createTextNode(feladat + " = " + eredmeny);
+                    ujElem.appendChild(ujElemTxt);
+                    lista.append(ujElem);
                     return megold(eredmeny);
                 }
                 else {
@@ -264,6 +274,11 @@ function megold(feladat) {
                 eredmeny = feladat.substring(0, poz - vissza + 1) + eredmeny + feladat.substring(poz + elore);
                 if (eredmeny.includes('+') || eredmeny.includes('*') || eredmeny.includes('/')) {
                     eredmeny = format(eredmeny)
+                    var lista = document.getElementById('megoldas');
+                    var ujElem = document.createElement('dt');
+                    var ujElemTxt = document.createTextNode(feladat + " = " + eredmeny);
+                    ujElem.appendChild(ujElemTxt);
+                    lista.append(ujElem);
                     return megold(eredmeny);
                 }
                 else {
